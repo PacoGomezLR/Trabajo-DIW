@@ -1,0 +1,137 @@
+ 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES CSS */
+:root {
+  --fuente-base: 'Inter', sans-serif;
+  --fuente-titulos: 'Fraunces', serif;
+
+  /* Tema claro */
+  --color-fondo: #0b0c10;
+  --color-texto: #f2f2f2;
+  --color-secundario: #b5b5c5;
+  --color-acento: #7c5cff;
+  --color-borde: rgba(255,255,255,0.15);
+}
+
+/* Tema oscuro (checkbox) */
+body:has(#tema:checked) {
+  --color-fondo: #f5f5fa;
+  --color-texto: #0b0c10;
+  --color-secundario: #444;
+  --color-acento: #5b5cff;
+  --color-borde: rgba(0,0,0,0.15);
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* CABECERA */
+.cabecera {
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.marca__logo {
+  width: 32px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: var(--color-texto);
+}
+
+.tema {
+  cursor: pointer;
+  border: 1px solid var(--color-borde);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 16px;
+}
+
+.hero__etiqueta {
+  color: var(--color-secundario);
+  margin-bottom: 10px;
+}
+
+.hero__titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.hero__titulo span {
+  color: var(--color-acento);
+}
+
+.hero__descripcion {
+  max-width: 600px;
+  margin: 20px 0;
+  color: var(--color-secundario);
+}
+
+.hero__botones {
+  display: flex;
+  gap: 12px;
+}
+
+/* BOTONES */
+.boton {
+  background-color: var(--color-acento);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.boton--secundario {
+  background-color: transparent;
+  border: 1px solid var(--color-borde);
+}
+
+/* FOOTER */
+.pie {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--color-borde);
+  color: var(--color-secundario);
+}
