@@ -6,9 +6,10 @@
   <title>Paco Gómez | Portafolio Musical</title>
 
   <!-- Tipografías sin derechos -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -44,11 +45,11 @@
     <!-- HERO / PRESENTACIÓN -->
     <section class="hero">
       <div class="hero__contenido">
-        <p class="hero__etiqueta">Guitarrista · Productor · Compositor</p>
+        <p class="hero__etiqueta">Guitarrista · Compositor</p>
 
         <h1 class="hero__titulo">
-          Mi trayectoria musical,
-          <span>contada con sonido</span>
+          Trayectoria musical,
+          <span>contada con imagen y sonido</span>
         </h1>
 
         <p class="hero__descripcion">
@@ -62,6 +63,118 @@
         </div>
       </div>
     </section>
+
+    <!-- ================= TRAYECTORIA ================= -->
+<section class="seccion" id="trayectoria">
+  <h2 class="seccion__titulo">Trayectoria</h2>
+
+  <div class="timeline">
+    <article class="hito animar">
+      <h3>Inicios</h3>
+      <p>Primeros pasos con la guitarra e inicio a tocar en la banda local montillana "Oveja Negra".</p>
+      <span>1998</span>
+    </article>
+
+    <article class="hito animar">
+      <h3>Estudios</h3>
+      <p>Armonía moderna aplicada en academia privada "Rock College" de Córdoba.</p>
+      <span>2014 – 2016</span>
+    </article>
+
+    <article class="hito animar">
+      <h3>Producción</h3>
+      <p>Grabación en home studio y aprendizaje de forma autodidacta.</p>
+      <span>2023 – Actualidad</span>
+    </article>
+
+    <article class="hito animar">
+      <h3>Proyectos actuales</h3>
+      <p>Cathaline (banda de Rock/Metal), RockaBanda (Versiones Rock/Pop) y Héroes Parasiempre( tributo a Héroes del Silencio).</p>
+      <span>Actualidad</span>
+    </article>
+  </div>
+</section>
+
+<!-- ================= PROYECTOS Pasados================= -->
+<section class="seccion" id="proyectos">
+  <h2 class="seccion__titulo">Proyectos pasados</h2>
+
+  <div class="proyectos">
+    <article class="card animar">
+      <h3>Oveja Negra</h3>
+      <p>Estilo: Metal/Punk/Trash</p>
+      <p>Periodo: <span>1998 – 2011</span></p>
+    </article>
+
+    <article class="card animar">
+      <h3>Project</h3>
+      <p>Estilo: Rock/Metal Melódico</p>
+      <p>Periodo: <span>2002 – 2014</span></p>
+    </article>
+
+    <article class="card animar">
+      <h3>Aljibe</h3>
+      <p>Tributo a Triana</p>
+      <p>Periodo: <span>2015 – 2018</span></p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ================= PROYECTOS PRESENTES================= -->
+<section class="seccion" id="proyectos">
+  <h2 class="seccion__titulo">Proyectos Actuales</h2>
+
+  <div class="proyectos">
+    <article class="card animar">
+      <h3>Cathaline</h3>
+      <p>Rock/Metal Melódico.</p>
+      <p>Periodo: <span>2025 – Actualidad</span></p>
+    </article>
+
+    <article class="card animar">
+      <h3>RockaBanda</h3>
+      <p>Versiones Pop/Rock</p>
+      <p>Periodo: <span>2014 – Actualidad</span></p>
+    </article>
+
+    <article class="card animar">
+      <h3>Héroes Parasiempre</h3>
+      <p>Tributo a Héroes del Silencio</p>
+      <p>Periodo: <span>2013 – Actualidad</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="seccion" id="galeria">
+  <h2 class="seccion__titulo">Galería</h2>
+
+  <div class="galeria">
+    <!-- PNG con transparencia -->
+    <figure class="foto animar">
+      <img src="assets/img/logo.png" alt="Logo en PNG con transparencia">
+      <figcaption>Logo (PNG)</figcaption>
+    </figure>
+
+    <!-- WEBP -->
+    <figure class="foto animar">
+      <img src="assets/img/directo.webp" alt="Foto en directo formato WEBP">
+      <figcaption>Directo (WEBP)</figcaption>
+    </figure>
+
+    <!-- AVIF -->
+    <figure class="foto animar">
+      <picture>
+        <source srcset="assets/img/studio.avif" type="image/avif">
+        <source srcset="assets/img/studio.webp" type="image/webp">
+        <img src="assets/img/studio.webp" alt="Home studio en AVIF">
+      </picture>
+      <figcaption>Home studio (AVIF)</figcaption>
+    </figure>
+  </div>
+</section>
+
 
   </main>
 
