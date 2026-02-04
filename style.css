@@ -185,6 +185,15 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+.card h3 {
+  text-align: center;
+  margin-top: 16px;   /* espacio entre imagen y título */
+  margin-bottom: 12px;
+  font-family: var(--fuente-titulos);
+}
+
+
 /* Animación básica 1: hover */
 .card:hover {
   transform: translateY(-6px);
@@ -220,3 +229,99 @@ body {
   }
 }
 
+/* FORMULARIO */
+.formulario {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  gap: 6px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--color-borde);
+  background-color: transparent;
+  color: var(--color-texto);
+  font-family: var(--fuente-base);
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--color-acento);
+}
+
+
+/* ANIMACIONES AVANZADAS */
+@supports (animation-timeline: view()) {
+
+  .animar {
+    animation: aparecer-scroll linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+
+  @keyframes aparecer-scroll {
+    from {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+}
+
+
+.hito__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto sutil al pasar el ratón */
+.hito:hover .hito__img {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+
+.hito {
+  position: relative;
+  overflow: hidden;
+}
+
+.hito__img {
+  filter: brightness(0.8) contrast(1.05);
+}
+
+
+/* CONTENEDOR DE CADA FOTO */
+.foto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* TODAS LAS IMÁGENES IGUALES */
+.foto img {
+  width: 100%;
+  height: 200px;          /* altura fija para todas */
+  object-fit: cover;      /* recorta sin deformar */
+  border-radius: 14px;
+}
