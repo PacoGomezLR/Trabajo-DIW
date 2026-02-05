@@ -1,27 +1,31 @@
-# Portafolio Musical – Paco Gómez
+# Portafolio Musical – Francisco Gómez Luque
 
-Trabajo realizado para la asignatura **DIW – Tema 4**.
+Trabajo realizado para la asignatura **Diseño de Interfaces Web (DIW) – Tema 4**.
 
-## Finalidad
-Diseño y desarrollo de un portafolio personal usando únicamente **HTML y CSS**, mostrando mi trayectoria musical, proyectos y galería multimedia.
+## Finalidad del proyecto
+Diseño y desarrollo de un portafolio personal utilizando exclusivamente **HTML y CSS**, sin uso de JavaScript, con el objetivo de mostrar mi trayectoria musical, proyectos y material multimedia.
 
-## Tecnologías usadas
+## Tecnologías utilizadas
 - HTML
 - CSS
 - Google Fonts (Josefin Sans, Roboto)
 
 ## Apartados del portafolio
-- Cabecera con modo claro / oscuro
-- Presentación (Hero)
-- Trayectoria musical (timeline)
-- Proyectos pasados y actuales
-- Galería de imágenes (PNG, WEBP, AVIF)
+- Cabecera con navegación y modo claro / oscuro
+- Presentación principal (Hero)
+- Trayectoria musical
+- Proyectos musicales pasados y actuales
+- Galería de imágenes (PNG, WEBP y AVIF)
 - Formulario de contacto
-- Diseño responsive
+- Diseño responsive para distintos dispositivos
+
+## Control de versiones
+El proyecto ha sido desarrollado utilizando **Git y GitHub**, realizando commits progresivos durante el desarrollo.
 
 ## Despliegue
-🔗 URL del proyecto: **(aquí pondrás Netlify / Vercel / GitHub Pages)**
+🔗 URL del proyecto:  
+**(Aquí añadirás Netlify / Vercel / GitHub Pages)**
 
 ## Autor
-Paco Gómez 
-Curso: 2º DAW
+**Francisco Gómez Luque-Romero**  
+Curso: **2º DAW**
