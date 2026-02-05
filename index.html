@@ -5,288 +5,371 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paco Gómez | Portafolio Musical</title>
 
-  <!-- Tipografías sin derechos -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <!-- Fuentes (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Toggle modo claro / oscuro (sin JS) -->
-  <input type="checkbox" id="tema" class="tema-input">
+  <!-- Toggle modo claro/oscuro -->
+  <input type="checkbox" id="modo" hidden>
 
-  <header class="cabecera">
-    <nav class="nav">
-      <div class="marca">
-        <img src="assets/img/logo.png" alt="Logo musical" class="marca__logo">
-        <span class="marca__texto">Paco Gómez</span>
+  <!-- ================== CABECERA ================== -->
+  <header class="header">
+    <nav class="menu">
+      <div class="brand">
+        <span class="brand-name">Paco Gómez</span>
       </div>
 
-      <div class="nav__links">
-        <a href="#" class="nav__link">Inicio</a>
-        <a href="#" class="nav__link">Trayectoria</a>
-        <a href="#" class="nav__link">Proyectos</a>
-        <a href="#" class="nav__link">Contacto</a>
+      <div class="menu-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#proyectos-actuales">Proyectos</a>
+        <a href="#contacto">Contacto</a>
       </div>
 
-      <label for="tema" class="tema">
-        <span>☾</span>
-        <span class="tema__texto">Modo</span>
+      <label for="modo" class="modo-btn" aria-label="Cambiar modo claro u oscuro">
+        <span aria-hidden="true">☾</span>
+        <span>Modo</span>
       </label>
     </nav>
   </header>
 
-
- 
-
   <main>
 
-    <!-- HERO / PRESENTACIÓN -->
-    <section class="hero">
-      <div class="hero__contenido">
-        <p class="hero__etiqueta">Guitarrista · Compositor</p>
+    <!-- ================== INTRO ================== -->
+    <section class="intro" id="inicio">
+      <div class="intro-box">
 
-        <h1 class="hero__titulo">
+        <p class="intro-tag">
+          <span class="icon" aria-hidden="true">
+            <!-- GUITARRA (estilo Tabler) -->
+            <svg viewBox="0 0 24 24" stroke-width="2">
+              <path d="M18 5a3 3 0 0 0 -3 3v1a2 2 0 0 1 -2 2h-1a3 3 0 0 0 -3 3v4l-4 4" />
+              <circle cx="14" cy="14" r="1" />
+            </svg>
+          </span>
+          Guitarrista · Compositor
+        </p>
+
+        <h1 class="intro-title">
           Trayectoria musical,
           <span>contada con imagen y sonido</span>
         </h1>
 
-        <p class="hero__descripcion">
+        <p class="intro-text">
           Este es mi portafolio personal donde muestro mi evolución musical,
           proyectos, grabaciones y experiencia en directo.
         </p>
 
-        <div class="hero__botones">
-          <a href="#" class="boton">Ver proyectos</a>
-          <a href="#" class="boton boton--secundario">Contactar</a>
+        <div class="intro-buttons">
+          <a href="#proyectos-actuales" class="btn">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ================= TRAYECTORIA ================= -->
-<section class="seccion" id="trayectoria">
-  <h2 class="seccion__titulo">Mi relación con la música</h2>
+    <!-- ================== TRAYECTORIA ================== -->
+    <section class="section" id="trayectoria">
+      <h2 class="section-title">
+        <span class="icon" aria-hidden="true">
+          <!-- PLAY -->
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </span>
+        Mi relación con la música
+      </h2>
 
-  <div class="timeline">
-    <article class="hito animar">
-      <h3>Inicios</h3>
-      <p>Primer contacto al entrar en la banda montillana "Oveja Negra".</p>
-      <span>1998</span>
-    </article>
+      <div class="history">
+        <article class="step animar">
+          <h3>Inicios</h3>
+          <p>Primer contacto al entrar en la banda montillana "Oveja Negra".</p>
+          <span>1998</span>
+        </article>
 
-    <article class="hito animar">
-      <h3>Estudios</h3>
-      <p>Armonía moderna en academia privada "Rock College" de Córdoba.</p>
-      <span>2014 – 2016</span>
-    </article>
+        <article class="step animar">
+          <h3>Estudios</h3>
+          <p>Armonía moderna en academia privada "Rock College" de Córdoba.</p>
+          <span>2014 – 2016</span>
+        </article>
 
-    <article class="hito animar">
-      <h3>Docencia</h3>
-      <ul>
-        <li>Curso de guitarra impartido en 2016 para el Ayto. de Montilla.</li> 
-        <li>Impartición de clases particulares individuales</li> 
-      </ul>
-      <span>1998</span>
-    </article>
+        <article class="step animar">
+          <h3>Docencia</h3>
+          <ul>
+            <li>Curso de guitarra impartido en 2016 para el Ayto. de Montilla.</li>
+            <li>Impartición de clases particulares individuales.</li>
+          </ul>
+          <span>2016</span>
+        </article>
 
-    <article class="hito animar">
-      <h3>Producción</h3>
-      <p>Grabación en home studio y aprendizaje de forma autodidacta.</p>
-      <span>2023 – Actualidad</span>
-    </article>
+        <article class="step animar">
+          <h3>Producción</h3>
+          <p>Grabación en home studio y aprendizaje de forma autodidacta.</p>
+          <span>2023 – Actualidad</span>
+        </article>
 
-    <article class="hito animar">
-      <h3>Guitarrista</h3>
-      <ul> 
-        <li>Actuaciones en directo</li>
-        <li>Guitarrista de estudio</li>
-      </ul>
-      <span>Actualidad</span>
-    </article>
-  </div>
-</section>
+        <article class="step animar">
+          <h3>Guitarrista</h3>
+          <ul>
+            <li>Actuaciones en directo.</li>
+            <li>Guitarrista de estudio.</li>
+          </ul>
+          <span>Actualidad</span>
+        </article>
+      </div>
+    </section>
 
-<!-- ================= PROYECTOS Pasados================= -->
-<section class="seccion" id="proyectos">
-  <h2 class="seccion__titulo">Proyectos pasados</h2>
+    <!-- ================== PROYECTOS PASADOS ================== -->
+    <section class="section" id="proyectos-pasados">
+      <h2 class="section-title">
+        <span class="icon" aria-hidden="true">
+          <!-- ARCHIVO -->
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <path d="M4 7h16" />
+            <path d="M6 7v14h12V7" />
+            <path d="M9 3h6l1 4H8l1-4z" />
+          </svg>
+        </span>
+        Proyectos pasados
+      </h2>
 
-  <div class="proyectos">
-    <article class="card animar">
-      <h3>Oveja Negra/Alkhemit</h3>
-      <img src="assets/img/OvejaNegra.png" alt="Inicios musicales" class="hito__img">
-      <p>Estilo: Metal/Punk/Trash</p>
-      <p>Periodo: <span>1998 – 2011</span></p>
-    <br/>
-      <h3>Videoclip - Marfil Negro</h3>
-    <iframe
-      src="https://www.youtube.com/embed/XRb9rXREeeE"
-      allowfullscreen>
-    </iframe>
+      <div class="projects">
+        <article class="card animar">
+          <h3>Oveja Negra / Alkhemit</h3>
+          <img src="assets/img/OvejaNegra.png" alt="Oveja Negra / Alkhemit">
+          <p>Estilo: Metal / Punk / Thrash</p>
+          <p>Periodo: <span>1998 – 2011</span></p>
 
-    </article>
+          <h4 class="card-subtitle">Videoclip - Marfil Negro</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/XRb9rXREeeE"
+              title="Videoclip - Marfil Negro"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
 
-    <article class="card animar">
-      <h3>Project</h3>
-      <img src="assets/img/Project.png" alt="Inicios musicales" class="hito__img">
-      <p>Estilo: Rock/Metal Melódico</p>
-      <p>Periodo: <span>2002 – 2014</span></p>
-      <br>
-      <h3>Videoclip - Y ahora qué?</h3>
-         <iframe
-           src="https://www.youtube.com/embed/6y2xKo37CvI?si=L0eWu-HUOXgK8Z8D"
-           allowfullscreen>
-         </iframe>
-    </article>
+        <article class="card animar">
+          <h3>Project</h3>
+          <img src="assets/img/Project.png" alt="Project">
+          <p>Estilo: Rock / Metal Melódico</p>
+          <p>Periodo: <span>2002 – 2014</span></p>
 
-    <article class="card animar">
-      <h3>Aljibe</h3>
-      <img src="assets/img/Aljibe.png" alt="Inicios musicales" class="hito__img">
-      <p>Tributo a Triana</p>
-      <p>Periodo: <span>2015 – 2018</span></p>
-      <br>
-      <h3>Video - El Lago</h3>
-      <iframe
-        class="card__media"
-        src="https://www.youtube.com/embed/oxDSAlP2lpw"
-        title="El Lago - Triana"
-        allowfullscreen>
-      </iframe>
-    </article>
-  </div>
-</section>
+          <h4 class="card-subtitle">Videoclip - Y ahora qué?</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/6y2xKo37CvI?si=L0eWu-HUOXgK8Z8D"
+              title="Videoclip - Y ahora qué?"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
 
+        <article class="card animar">
+          <h3>Aljibe</h3>
+          <img src="assets/img/Aljibe.png" alt="Aljibe">
+          <p>Tributo a Triana</p>
+          <p>Periodo: <span>2015 – 2018</span></p>
 
-<!-- ================= PROYECTOS PRESENTES================= -->
-<section class="seccion" id="proyectos">
-  <h2 class="seccion__titulo">Proyectos Actuales</h2>
+          <h4 class="card-subtitle">Video - El Lago</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/oxDSAlP2lpw"
+              title="El Lago - Triana"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <div class="proyectos">
-    <article class="card animar">
-      <h3>Cathaline</h3>
-      <img src="assets/img/Cathaline.png" alt="Inicios musicales" class="hito__img">
-      <p>Rock/Metal Melódico.</p>
-      <p>Periodo: <span>2025 – Actualidad</span></p>
-      <br>
-      <h3>Videoclip - Viento</h3>
-      <iframe
-        class="card__media"
-        src="https://www.youtube.com/embed/ZoIocSz074g"
-        title="Cathaline - Viento"
-        allowfullscreen>
-      </iframe>
-    </article>
+    <!-- ================== PROYECTOS ACTUALES ================== -->
+    <section class="section" id="proyectos-actuales">
+      <h2 class="section-title">
+        <span class="icon" aria-hidden="true">
+          <!-- ESTRELLA -->
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <path d="M12 17.3l-6.2 3.3 1.2-6.9-5-4.9 7-1 3.1-6.3 3.1 6.3 7 1-5 4.9 1.2 6.9z" />
+          </svg>
+        </span>
+        Proyectos actuales
+      </h2>
 
-    <article class="card animar">
-      <h3>RockaBanda</h3>
-      <img src="assets/img/Rockabanda.png" alt="Inicios musicales" class="hito__img">
-      <p>Versiones Pop/Rock</p>
-      <p>Periodo: <span>2014 – Actualidad</span></p>
-      <br>
-      <h3>Video - Salta</h3>
-      <iframe
-        class="card__media"
-        src="https://www.youtube.com/embed/svnV3Wtj2m4"
-        title="RockaBanda - Salta"
-        allowfullscreen>
-      </iframe>
-    </article>
+      <div class="projects">
+        <article class="card animar">
+          <h3>Cathaline</h3>
+          <img src="assets/img/Cathaline.png" alt="Cathaline">
+          <p>Rock / Metal Melódico.</p>
+          <p>Periodo: <span>2025 – Actualidad</span></p>
 
-    <article class="card animar">
-      <h3>Héroes Parasiempre</h3>
-      <img src="assets/img/Heroes.png" alt="Inicios musicales" class="hito__img">
-      <p>Tributo a Héroes del Silencio</p>
-      <p>Periodo: <span>2013 – Actualidad</span></p>
-      <br>
-      <h3>Video - Mar Adentro</h3>
-      <iframe
-        class="card__media"
-        src="https://www.youtube.com/embed/NpMu3I19178"
-        title="Héroes Parasiempre - Mar Adentro"
-        allowfullscreen>
-      </iframe>
-    </article>
-  </div>
-</section>
+          <h4 class="card-subtitle">Videoclip - Viento</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/ZoIocSz074g"
+              title="Cathaline - Viento"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
 
-<!-- ================= GALERÍA ================= -->
-<section class="seccion" id="galeria">
-  <h2 class="seccion__titulo">Galería</h2>
+        <article class="card animar">
+          <h3>RockaBanda</h3>
+          <img src="assets/img/Rockabanda.png" alt="RockaBanda">
+          <p>Versiones Pop / Rock</p>
+          <p>Periodo: <span>2014 – Actualidad</span></p>
 
-  <div class="galeria">
-    <!-- PNG con transparencia -->
+          <h4 class="card-subtitle">Video - Salta</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/svnV3Wtj2m4"
+              title="RockaBanda - Salta"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
 
+        <article class="card animar">
+          <h3>Héroes Parasiempre</h3>
+          <img src="assets/img/Heroes.png" alt="Héroes Parasiempre">
+          <p>Tributo a Héroes del Silencio</p>
+          <p>Periodo: <span>2013 – Actualidad</span></p>
 
-    <figure class="foto animar">
-      <picture>
-        <img src="assets/img/Estudio.png" alt="Home studio en AVIF">
-      </picture>
-      <figcaption>Home studio</figcaption>
-    </figure>
+          <h4 class="card-subtitle">Video - Mar Adentro</h4>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/NpMu3I19178"
+              title="Héroes Parasiempre - Mar Adentro"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <figure class="foto animar">
-      <img src="assets/img/logo.png" alt="Logo en PNG con transparencia">
-    </figure>
+    <!-- ================== GALERÍA ================== -->
+    <section class="section" id="galeria">
+      <h2 class="section-title">
+        <span class="icon" aria-hidden="true">
+          <!-- FOTO -->
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <path d="M4 7h16v13H4z" />
+            <path d="M8 7l2-3h4l2 3" />
+            <circle cx="12" cy="13" r="2" />
+          </svg>
+        </span>
+        Galería
+      </h2>
 
-    <!-- WEBP -->
-    <figure class="foto animar">
-      <img src="assets/img/Local.webp" alt="Foto en directo formato WEBP">
-      <figcaption>Ensayo Project</figcaption>
-    </figure>
+      <div class="gallery">
+        <figure class="photo animar">
+          <img src="assets/img/PacoON.png" alt="Prueba de sonido Oveja Negra">
+          <figcaption>Prueba de sonido Oveja Negra</figcaption>
+        </figure>
 
-     <figure class="foto animar">
-      <img src="assets/img/PaloPalo.webp" alt="Foto en directo formato WEBP">
-      <figcaption>Concierto Project</figcaption>
-    </figure>
+        <figure class="photo animar">
+          <img src="assets/img/Project.png" alt="Concierto Project">
+          <figcaption>Concierto Project</figcaption>
+        </figure>
 
-    <!-- AVIF -->
-    <figure class="foto animar">
-      <picture>
-        <img src="assets/img/1.avif" alt="Home studio en AVIF">
-      </picture>
-      <figcaption>Héroes Parasiempre</figcaption>
-    </figure>
+        <figure class="photo animar">
+          <img src="assets/img/3.avif" alt="Aljibe con Eduardo Rodríguez Rodway (Triana)">
+          <figcaption>Aljibe con Eduardo Rodríguez Rodway (Triana)</figcaption>
+        </figure>
 
-     <figure class="foto animar">
-      <picture>
-        <img src="assets/img/2.avif" alt="Home studio en AVIF">
-      </picture>
-      <figcaption>RockaBanda</figcaption>
-    </figure>
-  </div>
-</section>
+        <figure class="photo animar">
+          <img src="assets/img/Estudio.png" alt="Home studio">
+          <figcaption>Home studio</figcaption>
+        </figure>
 
- <!-- ================= CONTACTO ================= -->
-<section class="seccion" id="contacto">
-  <h2 class="seccion__titulo">Contacto</h2>
+        <figure class="photo animar">
+          <img src="assets/img/logo.png" alt="Logo en PNG con transparencia">
+          <figcaption>Identidad visual</figcaption>
+        </figure>
 
-  <form class="formulario animar">
-    <label>
-      Nombre
-      <input type="text" placeholder="Tu nombre">
-    </label>
+        <figure class="photo animar">
+          <img src="assets/img/Local.webp" alt="Ensayo Project">
+          <figcaption>Ensayo Project</figcaption>
+        </figure>
 
-    <label>
-      Email
-      <input type="email" placeholder="tu@email.com">
-    </label>
+        <figure class="photo animar">
+          <img src="assets/img/PaloPalo.webp" alt="Concierto Project">
+          <figcaption>Concierto Project</figcaption>
+        </figure>
 
-    <label>
-      Mensaje
-      <textarea rows="5" placeholder="Escribe tu mensaje"></textarea>
-    </label>
+        <figure class="photo animar">
+          <img src="assets/img/1.avif" alt="Héroes Parasiempre">
+          <figcaption>Héroes Parasiempre</figcaption>
+        </figure>
 
-    <button type="submit" class="boton">Enviar</button>
-  </form>
-</section>
+        <figure class="photo animar">
+          <img src="assets/img/2.avif" alt="RockaBanda">
+          <figcaption>RockaBanda</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================== CONTACTO ================== -->
+    <section class="section" id="contacto">
+      <h2 class="section-title">
+        <span class="icon" aria-hidden="true">
+          <!-- SOBRE -->
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <path d="M4 8h16v12H4z" />
+            <path d="M4 8l8 6 8-6" />
+          </svg>
+        </span>
+        Contacto
+      </h2>
+
+      <form class="contact animar" action="#" method="post">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="2">
+                <path d="M4 6h16v12H4z" />
+                <path d="M4 7l8 6 8-6" />
+              </svg>
+            </span>
+            Email
+          </label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
 
   </main>
 
-  <footer class="pie">
-    <p>© 2026 · Paco Gómez · DIW</p>
+  <!-- ================== FOOTER ================== -->
+  <footer class="footer">
+    <p>
+      <span class="icon" aria-hidden="true">
+        <!-- UBICACIÓN -->
+        <svg viewBox="0 0 24 24" stroke-width="2">
+          <path d="M12 21s7-5.2 7-12a7 7 0 0 0-14 0c0 6.8 7 12 7 12z" />
+          <circle cx="12" cy="9" r="2" />
+        </svg>
+      </span>
+      © 2026 · Paco Gómez · DIW
+    </p>
   </footer>
 
 </body>
