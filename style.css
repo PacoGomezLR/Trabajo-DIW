@@ -545,3 +545,13 @@ body {
     transform: perspective(800px) rotateY(0) translateY(0);
   }
 }
+
+
+/* =========================
+   AJUSTE IMÁGENES EN MÓVIL
+========================= */
+@media (max-width: 600px) {
+  .photo img {
+    height: 300px; /* más altas en móvil */
+  }
+}
